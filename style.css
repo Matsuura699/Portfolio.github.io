@@ -1,5 +1,5 @@
 body{
-    background-color: #cdf7e4;
+    background-color: #e9ffcb;
     font-family: DotGothic16;
     color: #363e32
     }
@@ -48,7 +48,23 @@ p{
 }
 
 .skills{
+    width: 150px;
+    height: auto;
+    border: 5px solid #363e32;
+}
+
+.skills_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills_image{
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px;
 }
+

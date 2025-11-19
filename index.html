@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Matsuura699|Yunomi_pixel Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.google.com/specimen/DotGothic16?lang=ja_Jpan&categoryFilters=Feeling:%2FExpressive%2FStiff" rel="stylesheet">
 </head>
 <body>
   <div class="main">
@@ -19,14 +20,53 @@
       handle name: Yunomi_pixel<br>
       School 　　: 大阪公立大学工業高等専門学校 知能情報コース 2年<br>
       Club 　　　: 学友会執行部 / 総合芸術部<br>
-      Others 　　: MikuIT / Klef-Project<br>
+      Others 　　: MikuIT / Klef-Project 所属<br>
     </p>
   </div>
   <h3>Skills</h3>
-  <div class="skills">
-    <p>
-    </p>
+  <div class="skills_button">
+    <button id="programming_button">Programming</button>
+    <button id="others_button">Others</button>
+  </div>
+  <div id="programming_skills">
+    <div class="skills_image">
+      <img class="skills" src="images/HTML.png" alt="Yunomi_icon">
+      <img class="skills" src="images/CSS.png" alt="Yunomi_icon">
+      <img class="skills" src="images/python.png" alt="Yunomi_icon">
+      <img class="skills" src="images/VSCode.png" alt="Yunomi_icon">
+      <img class="skills" src="images/github.jpg" alt="Yunomi_icon">
+      <img class="skills" src="images/microbit.jpg" alt="Yunomi_icon">
+    </div>
+    <div class="skills_image">
+      <img class="skills" src="images/tinkercad.png" alt="Yunomi_icon">
+      <img class="skills" src="images/arduino.jpg" alt="Yunomi_icon">
+      <img class="skills" src="images/godot.png" alt="Yunomi_icon">
+    </div>
+  </div>
+  <div id="others_skills" style="display:none;">
+    <div class="skills_image">
+      <img class="skills" src="images/edge2.jpg" alt="Yunomi_icon">
+      <img class="skills" src="images/aseprite.png" alt="Yunomi_icon">
+      <img class="skills" src="images/AviUtl.png" alt="Yunomi_icon">
+    </div>
+  </div>
+  <script>
+    const programming = document.getElementById("programming_skills");
+    const others = document.getElementById("others_skills");
+    document.getElementById("programming_button").addEventListener("click", () => {
+        programming.style.display = "block";
+        others.style.display = "none";
+      });
+    document.getElementById("others_button").addEventListener("click", () => {
+        programming.style.display = "none";
+        others.style.display = "block";
+      });
+  </script>
   <h3>Works</h3>
   <h3>Contact</h3>
+  <p>各種SNS</p>
+
+
+
 </body>
 </html>
